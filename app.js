@@ -34,7 +34,7 @@ var mutations = {
 	},
 	TOGGLE_TODO: (state, payload) => {
 		var item = state.todos.find(todo => todo.id === payload);
-		//odje se invertuje boolean
+		//odje se invertuje boolean od propertyja 'completed'
 		item.completed = !item.completed;
 	},
 	DELETE_TODO: (state, payload) => {
