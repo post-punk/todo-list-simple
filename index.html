@@ -9,8 +9,11 @@
 	<body>
 		<div class="container">
 			<h1>Todo Lista</h1>
-            <p>click on a Todo to edit it, X to delete</p>
-
+      <p>Click or tap on a <i>Todo</i> to edit it;</p>
+      <p>
+        '<span class="check">&#10003</span>' symbol to toggle completion;
+              </p>
+      <p>'<span class="delete">&#10006</span>' to delete.</p>
 			<div id="app"></div>
 		</div>
 	<template id="todo-list">
@@ -20,7 +23,11 @@
 				:class="{completed: todo.completed}"
 				class="task"
         v-on:keyup.enter="$event.target.blur()"
-        v-model="todo.task"><button id="delete" @click="deleteTodo(todo.id)">X</button></input></li>
+        v-model="todo.task">
+        <button id="check" @click="toggleTodo(todo.id)">&#10003</button>
+        <button id="delete" @click="deleteTodo(todo.id)">&#10006</button>
+        
+      </input></li>
 		</ul>
 	</template>
 	<template id="app-template">

@@ -19,7 +19,6 @@ body {
 }
 h1 {
 	text-align: center;
-	margin-top: 0;
 }
 .todo-input {
 	width: 100%;
@@ -30,12 +29,13 @@ h1 {
 	border-style: none;
 	border: solid 1px lightgray;
 	box-sizing: border-box;
+  margin-top: 1rem;
 }
 .tasks {
 	padding-left: 0.5rem;
 }
 .task:hover {
-	cursor:pointer;
+
 }
 .completed {
 	text-decoration: line-through;
@@ -49,18 +49,37 @@ input.task {
   display: inline;
   border: none;
   color: inherit;
-  width: 90%;
+  width: 70%;
+  margin-bottom: 0.6rem;
 }
 #delete {
   cursor: pointer;
   position: absolute;
+  outline: none;
   float: right;
   display: inline;
   right: 0px;
   border: none;
   color: inherit;
   background-color: white;
+  color: indianred;
+
+}
+#check {
+  position: absolute;
+  right: 30px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  float: right;
+  display: inline;
+  background-color: white;
   font-weight: bold;
+  color: #3CBCBC;
+
+}
+#check:hover {
+  cursor: pointer;
 }
 #delete:hover {
   cursor: pointer;
@@ -68,4 +87,14 @@ input.task {
 .container p {
   text-align:center;
   font-size: 0.8rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: block;
+  padding-top: 0.2rem;
+}
+.check {
+  color: #3CBCBC;
+}
+.delete {
+  color: indianred;
 }
