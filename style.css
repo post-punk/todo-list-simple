@@ -32,7 +32,7 @@ h1 {
 	box-sizing: border-box;
 }
 .tasks {
-	padding-left: 1.5rem;
+	padding-left: 0.5rem;
 }
 .task:hover {
 	cursor:pointer;
@@ -40,4 +40,32 @@ h1 {
 .completed {
 	text-decoration: line-through;
 	color: #555;
+}
+li {
+  list-style-type:none;
+  position: relative
+}
+input.task {
+  display: inline;
+  border: none;
+  color: inherit;
+  width: 90%;
+}
+#delete {
+  cursor: pointer;
+  position: absolute;
+  float: right;
+  display: inline;
+  right: 0px;
+  border: none;
+  color: inherit;
+  background-color: white;
+  font-weight: bold;
+}
+#delete:hover {
+  cursor: pointer;
+}
+.container p {
+  text-align:center;
+  font-size: 0.8rem;
 }

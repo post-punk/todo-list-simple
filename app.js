@@ -7,7 +7,7 @@ var state = {
 		},
 		{
 			id: 1,
-			task: 'Zavrsi Vue(x) todo listu && okaci na git',
+			task: 'Zavrsi Vue(x) todo listu',
 			completed: false
 		},
 		{
@@ -95,3 +95,8 @@ var app = new Vue({
 	el: '#app',
 	template: '#app-template'
 });
+
+//izbrisano iz v-for input fieldova
+//			@click="toggleTodo(todo.id)"
+//      @dblclick="deleteTodo(todo.id)"
+//
