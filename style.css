@@ -19,6 +19,7 @@ body {
 }
 h1 {
 	text-align: center;
+  color: #0c0000	
 }
 .todo-input {
 	width: 100%;
@@ -50,7 +51,7 @@ input.task {
   border: none;
   color: inherit;
   width: 70%;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 #delete {
   cursor: pointer;
