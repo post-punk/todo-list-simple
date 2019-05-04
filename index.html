@@ -11,9 +11,9 @@
 			<h1>Todo Lista</h1>
       <p>Click or tap on a <i>Todo</i> to edit it;</p>
       <p>
-        '<span class="check">&#10003</span>' symbol to toggle completion;
+        '<span >&#10003</span>' symbol to toggle completion;
               </p>
-      <p>'<span class="delete">&#10006</span>' to delete.</p>
+      <p>'<span >&#10006</span>' to delete it.</p>
 			<div id="app"></div>
 		</div>
 	<template id="todo-list">
@@ -24,7 +24,7 @@
 				class="task"
         v-on:keyup.enter="$event.target.blur()"
         v-model="todo.task">
-        <button id="check" @click="toggleTodo(todo.id)">&#10003</button>
+        <button class="check-default" :class="{check: todo.completed}" @click="toggleTodo(todo.id)">&#10003</button>
         <button id="delete" @click="deleteTodo(todo.id)">&#10006</button>
         
       </input></li>

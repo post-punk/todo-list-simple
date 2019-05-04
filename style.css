@@ -50,7 +50,7 @@ input.task {
   display: inline;
   border: none;
   color: inherit;
-  width: 70%;
+  width: 80%;
   margin-bottom: 0.8rem;
 }
 #delete {
@@ -63,10 +63,8 @@ input.task {
   border: none;
   color: inherit;
   background-color: white;
-  color: indianred;
-
 }
-#check {
+.check-default {
   position: absolute;
   right: 30px;
   border: none;
@@ -76,13 +74,13 @@ input.task {
   display: inline;
   background-color: white;
   font-weight: bold;
-  color: #3CBCBC;
-
 }
-#check:hover {
+
+.check-default:hover {
   cursor: pointer;
 }
 #delete:hover {
+  color: #800000;
   cursor: pointer;
 }
 .container p {
@@ -94,8 +92,5 @@ input.task {
   padding-top: 0.2rem;
 }
 .check {
-  color: #3CBCBC;
-}
-.delete {
-  color: indianred;
+  color: #008000
 }
